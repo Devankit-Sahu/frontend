@@ -6,12 +6,16 @@ const Card = () => {
     setIsExpanded(!isExpanded);
   };
   return (
-    <div className="w-[300px] bg-[#f0fff066] rounded-md p-5 cursor-pointer hover:scale-[.9]">
-      <h2 className="text-xl font-semibold mb-4 text-center">
-        Rooted in Stillness: Unveiling the Power of Kapha Dosha
-      </h2>
+    <div
+      className={`relative w-[300px] bg-[#f0fff066] rounded-md px-5 py-10 cursor-pointer hover:-translate-y-1 ${
+        isExpanded ? "h-auto" : "h-[190px]"
+      }`}
+    >
+      <h4 className="absolute top-0 left-0 bg-[#ee82ee94] rounded-md px-2 py-1 font-semibold">
+        chakra samhita
+      </h4>
       <p
-        className={`text-center hover:underline overflow-hidden ${
+        className={`text-center overflow-hidden ${
           isExpanded ? "h-auto" : "h-20"
         }`}
       >
@@ -21,7 +25,7 @@ const Card = () => {
       </p>
       <button
         onClick={toggleExpansion}
-        className="mt-2 text-blue-500 hover:underline focus:outline-none"
+        className="mt-2 text-white bg-gradient-to-r from-[#5603dd] via-purple-500 to-[#ff5de4] px-3 py-2 rounded-md"
       >
         {isExpanded ? "Read Less" : "Read More"}
       </button>

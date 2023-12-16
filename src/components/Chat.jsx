@@ -33,15 +33,15 @@ const Chat = () => {
         {/* {response &&
           response.map((res, index) => (
           ))} */}
-        <div className="flex justify-center flex-wrap gap-8 mt-10">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="mt-10">
+          <h3 className="text-2xl text-white text-center">Top 5 results : </h3>
+          <div className="flex justify-center flex-wrap gap-8 mt-5">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
         </div>
       </div>
     </div>
