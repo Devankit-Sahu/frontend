@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  background-image: url("./assets/2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  z-index: -10;
+}
+
+.ayurvedh-doash {
+  /* background-color: #80d0c7; */
+  background-color: #eff2f1;
+  border-radius: 0 0 100px 100px;
+  padding-bottom: 20px;
+}
+.img-wrap{
+  position: relative;
+}
+.img-wrap::before{
+ position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-image: url("./assets/dots-yellow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translate(-40%, -40%);
+    z-index: -1;
+    left: 25px;
+}
+
+.bgi{
+  background-image: url("./assets/vata1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.chat{
+  background-image: url("./assets/chat-bg1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
