@@ -1,9 +1,10 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="explore-section py-[7rem]">
+    <div className="explore-section py-[6rem]" id="about">
       <div className="section-overlay"></div>
       <div className="explore-wrapper">
         <div className="max-w-[1142px] mx-auto">
@@ -33,7 +34,7 @@ const About = () => {
               <li className="relative pt-[20px] pb-[65px] pl-[125px] before:content-none before:absolute before:w-[8px] before:h-full before:bg-transparent before:left-[52px] before:z-0">
                 <h4 className="text-white text-[28px] font-semibold">
                   {" "}
-                  Search your diseases
+                  Get response
                 </h4>
                 <p className="text-white text-[20px] leading-[40px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
@@ -48,19 +49,26 @@ const About = () => {
               <li className="relative pt-[20px] pb-[65px] pl-[125px] before:content-none before:absolute before:w-[8px] before:h-full before:bg-transparent before:left-[52px] before:z-0">
                 <h4 className="text-white text-[28px] font-semibold">
                   {" "}
-                  Search your diseases
+                  Find your cure!
                 </h4>
                 <p className="text-white text-[20px] leading-[40px]">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
                   iure quaerat, quam ab fugiat quasi alias quisquam consequuntur
                   dolorem accusamus!
                 </p>
-                {/* <div className="absolute left-0 top-0 w-[104px] h-[104px] flex justify-center items-center bg-[#80d0c7] rounded-[50%] z-[1] transition-all duration-[.4] before:content-none before:w-[80px] before:h-[80px] before:absolute before:border-4 before:border-solid before:border-white before:rounded-[50%] before:z-[-1] before:transition-all before:duration-[.4]"></div> */}
                 <div className="icon-holder">
                   <CiSearch color="white" size="25px" />
                 </div>
               </li>
             </ul>
+          </div>
+          <div className="flex justify-center items-center gap-x-4">
+            <p className="text-white relative text-center text-xl">
+              Want to try ?
+            </p>
+            <Link to="/" className="text-[#80d0c7] font-bold tracking-[2px] relative border border-[#80d0c7] px-5 p-2 rounded-[25px] hover:bg-[#80d0c7] hover:text-white transition duration-300 ease-in-out">
+              Try
+            </Link>
           </div>
         </div>
       </div>

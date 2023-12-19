@@ -5,7 +5,9 @@
 * {
   margin: 0;
   padding: 0;
+  font-family:serif;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .hero-section {
@@ -13,8 +15,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
   padding-top: 180px;
   padding-bottom: 180px;
   z-index: -10;
@@ -49,11 +51,17 @@
   background-size: cover;
 }
 
-.chat {
-  background-image: url("./assets/chat-bg1.png");
+.chat-bg {
+  background-image: url("./assets/9.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  ;
+  height: 78px;
+}
+
+.chat{
+  background-color: #eff2f1;
 }
 
 .explore-section {
@@ -69,7 +77,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  pointer-events: none;
   width: 100%;
   height: 100%;
   opacity: 0.85;
@@ -100,3 +107,12 @@ content: "";
     z-index: -1;
     transition: 0.4s all;
 }
+
+
+.logo-name{
+  background: linear-gradient(45deg, #8A307F, #79A7D3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+

@@ -1,7 +1,7 @@
 import React from "react";
 import img from "../assets/3.jpg";
 import svg from "../assets/truck.svg";
-
+import { FaLeaf } from "react-icons/fa";
 const Features = () => {
   return (
     <div
@@ -12,7 +12,7 @@ const Features = () => {
         <div className="grid grid-cols-2 gap-x-20">
           <div className="">
             <h1 className="capitalize text-3xl font-semibold mb-6">
-              <span className="text-4xl text-blue-500">Ayruvedh</span> Doshas
+              <span className="text-4xl text-blue-500">Our</span> features
             </h1>
             <p className="text-[#6a6a6a] mb-8">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
@@ -21,43 +21,43 @@ const Features = () => {
             </p>
             <div className="grid grid-cols-2 gap-10">
               <div className="feature">
-                <img src={svg} alt="" />
+                {/* <img src={svg} alt="" /> */}
+                <FaLeaf />
                 <h3 className="text-[#2f2f2f] text-[14px] font-semibold leading-[1.2] mb-[.5]">
-                  Fast &amp; Free Shipping
+                  lorem ipsum
                 </h3>
                 <p className="text-[#6a6a6a] text-[14px] font-semibold leading-[22px]">
-                  Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                  aliquet velit. Aliquam vulputate.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, ipsum.
                 </p>
               </div>
               <div className="feature">
-                <img src={svg} alt="" />
+                <FaLeaf />
                 <h3 className="text-[#2f2f2f] text-[14px] font-semibold leading-[1.2] mb-[.5]">
-                  Fast &amp; Free Shipping
+                  lorem ipsum
                 </h3>
                 <p className="text-[#6a6a6a] text-[14px] font-semibold leading-[22px]">
-                  Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                  aliquet velit. Aliquam vulputate.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                  nam veritatis. Vitae, ab mollitia.
                 </p>
               </div>
               <div className="feature">
-                <img src={svg} alt="" />
+                <FaLeaf />
                 <h3 className="text-[#2f2f2f] text-[14px] font-semibold leading-[1.2] mb-[.5]">
-                  Fast &amp; Free Shipping
+                  lorem ipsum
                 </h3>
                 <p className="text-[#6a6a6a] text-[14px] font-semibold leading-[22px]">
-                  Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                  aliquet velit. Aliquam vulputate.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Doloremque, possimus.
                 </p>
               </div>
               <div className="feature">
-                <img src={svg} alt="" />
+                <FaLeaf />
                 <h3 className="text-[#2f2f2f] text-[14px] font-semibold leading-[1.2] mb-[.5]">
-                  Fast &amp; Free Shipping
+                  lorem ipsum
                 </h3>
                 <p className="text-[#6a6a6a] text-[14px] font-semibold leading-[22px]">
-                  Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                  aliquet velit. Aliquam vulputate.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
               </div>
             </div>

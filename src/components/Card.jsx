@@ -5,23 +5,24 @@ const Card = () => {
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
   };
+
+  const text =
+    "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam minus nostrum neque doloremque excepturi, eaque voluptate assumenda officiis voluptatibus quisquam.";
   return (
     <div
-      className={`relative w-[300px] bg-[#f0fff066] rounded-md px-5 py-10 cursor-pointer hover:-translate-y-1 ${
-        isExpanded ? "h-auto" : "h-[190px]"
+      className={`relative w-[300px] bg-white rounded-md px-5 pt-10 pb-6 cursor-pointer hover:-translate-y-1 ${
+        isExpanded ? "h-auto" : ""
       }`}
     >
-      <h4 className="absolute top-0 left-0 bg-[#ee82ee94] rounded-md px-2 py-1 font-semibold">
+      <h4 className="absolute top-0 left-0 text-[#05849bb4] rounded-md px-2 py-1 font-semibold">
         chakra samhita
       </h4>
       <p
         className={`text-center overflow-hidden ${
-          isExpanded ? "h-auto" : "h-20"
+          isExpanded ? "h-auto" : "h-[4.8rem]"
         }`}
       >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-        minus nostrum neque doloremque excepturi, eaque voluptate assumenda
-        officiis voluptatibus quisquam.
+        {text}
       </p>
       <button
         onClick={toggleExpansion}
